@@ -1,0 +1,79 @@
+.completerotclock {
+    animation: comprot 1s ease-in-out 0s 1 forwards;
+}
+
+.completerotanticlock {
+    animation: comprot 1s ease-in-out 0s 1 reverse forwards;
+}
+
+.infrotclock {
+    animation: comprot 1s ease-in-out 0s infinite;
+}
+
+.infrotanticlock {
+    animation: comprot 1s ease-in-out 0s infinite reverse;
+}
+
+@keyframes comprot {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.halfrotclock {
+    animation: halfrot 1s ease-in-out 0s 1 forwards;
+}
+
+.halfrotanticlock {
+    animation: halfrot 1s ease-in-out 0s 1 reverse forwards;
+}
+
+@keyframes halfrot {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+.rot_fade_clock {
+    animation: rot1 1s ease-in-out 0s 1 forwards;
+}
+
+.rot_app_anticlock {
+    animation: rot1 1s ease-in-out 0s 1 reverse forwards;
+}
+
+@keyframes rot1 {
+    0% {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.rot_app_clock {
+    animation: rot2 1s ease-in-out 0s 1 forwards;
+}
+
+.rot_fade_anticlock {
+    animation: rot2 1s ease-in-out 0s 1 reverse forwards;
+}
+
+@keyframes rot2 {
+    0% {
+        transform: rotate(0deg);
+        opacity: 0;
+    }
+    100% {
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+}
